@@ -52,7 +52,7 @@ export default function RecipeSearch() {
   return (
     <div className={`flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-gray-700 via-gray-900 to-gray-900 p-6`}>
       {/* Main content box */}
-      <div className="w-full max-w-2xl p-8 rounded-lg shadow-2xl bg-gray-800 border border-gray-700 transition-all hover:border-blue-500 hover:shadow-blue-500/50">
+      <div className="w-full max-w-2xl p-8 rounded-lg shadow-2xl bg-gray-800 border border-gray-700 transition-all hover:border-green-500 hover:shadow-green-500/50">
         <header className="flex flex-col items-center mb-6">
           <h1 className="text-4xl font-bold p-0 m-0 bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-blue-600">Recipe Search</h1>
           <p className="text-lg text-gray-600 mb-4">
@@ -76,7 +76,7 @@ export default function RecipeSearch() {
             <Input
               type="search"
               placeholder="Search by ingredient..."
-              className="pr-10 border-gray-300 focus:border-green-500 focus:ring-green-500"
+              className="pr-10 border-gray-300 focus:border-green-500 focus:ring-green-600"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
             />
@@ -84,7 +84,7 @@ export default function RecipeSearch() {
               type="submit"
               variant="ghost"
               size="icon"
-              className="absolute right-2 top-1/2 -translate-y-1/2 text-green-500 hover:text-green-600"
+              className="absolute right-2 top-1/2 -translate-y-1/2 from-green-500 to-blue-600 hover:text-green-600"
             >
               <SearchIcon className="w-5 h-5" />
             </Button>
